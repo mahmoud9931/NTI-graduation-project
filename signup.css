@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    padding: 15px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 1px solid #ccc;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.left {
+    margin-top: 30px;
+    flex: 1;
+    min-width: 280px;
+    padding: 0 15px;
+}
+
+.left label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.left input {
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    margin-top: 8px;
+}
+
+.left input:focus {
+    outline: none;
+    border: 1px solid #EE2323;
+}
+
+.left button {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #EE2323;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.right img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Mobile screens (up to 768px) */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 3%;
+    }
+
+    .left {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .left input {
+        max-width: 100%;
+    }
+
+    .right {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .right img {
+        display: none;
+    }
+
+    .left button {
+
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/* Same as before, no changes to the existing CSS */
+#email-msg {
+    font-size: 13px;
+    margin-top: 5px;
+    display: block;
+    transition: opacity 0.3s;
+}
+
+#email-msg.valid {
+    color: green;
+}
+
+#email-msg.invalid {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+#requirements {
+    list-style: none;
+    margin-top: 10px;
+    padding-left: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+#requirements li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#requirements li span {
+    width: 20px;
+    display: inline-block;
+}
+
+
+/* Tablet screens (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    main {
+        margin: 0 5%;
+    }
+
+    .left input {
+        max-width: 350px;
+    }
+
+    .right img {
+        max-width: 350px;
+    }
+}
+
+/* Large screens (above 1024px) */
+@media screen and (min-width: 1025px) {
+    main {
+        margin: 0 10%;
+    }
+
+    .left input {
+        max-width: 400px;
+    }
+
+    .right img {
+        max-width: 400px;
+    }
+}

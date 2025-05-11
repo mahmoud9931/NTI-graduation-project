@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    margin: 0 100px;
+    padding: 20px;
+}
+
+.course-details h2 {
+    color: #EE2323;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.course-video {
+    position: relative;
+}
+
+.course-video img {
+    width: 100%;
+    border-radius: 8px;
+}
+.pre{
+    display: flex;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: red;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.course-info {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.objective-btn {
+    background: #EE2323;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.price-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.price-card .price {
+    font-size: 24px;
+    color: #EE2323;
+}
+
+.cart-btn,
+.buy-btn {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-btn {
+    background: #eee;
+}
+
+.buy-btn {
+    background: #EE2323;
+    color: white;
+}
+
+.instructor-card {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.instructor-card img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons i {
+    margin: 0 5px;
+    font-size: 18px;
+    color: blue;
+    cursor: pointer;
+}
+.social-icons  .s{
+    color: red;
+}
+
